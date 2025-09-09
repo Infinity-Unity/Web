@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Book Library</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+    <body>
+        <main class="container">
+            <h1 style="background-color: darkgreen;">Библиотека книг</h1>
+            <section class="add-book">
+                <h2>Добавить книгу</h2>
+                <form id="book-form">
+                    <label>Название <input type="text" id="title" required></label>
+                    <label>Автор <input type="text" id="author"></label>
+                    <label>Файл <input type="file" id="file" accept=".pdf,.doc,.docx" required></label>
+                    <div clas="buttons">
+                        <button type="submit">Добавить</button>
+                        <button type="button" id="btn_clear" title="Очищает все книги">Очистить</button>
+                    </div>
+                </form>
+            </section>
+            <section class="library">
+                <h2>Книги</h2>
+                <div id="book_list" class="book_list"></div>
+            </section>
+
+            <section class="viewer">
+                <h2>Просмотр</h2>
+                <div id="viewer" class="viewer">Выберите книгу</div>
+            </section>
+        </main>
+    </body>
+</html>
