@@ -187,7 +187,7 @@ button[type="submit"]:hover {
 }
 
 .document-view {
-  display: none; /* Будет отображаться при выборе книги (с помощью JS в реальном приложении) */
+  display: none; 
   flex-direction: column;
   height: 100%;
 }
@@ -223,7 +223,7 @@ button[type="submit"]:hover {
   overflow-y: auto;
 }
 
-/* Адаптивность */
+ 
 @media (max-width: 768px) {
   .container {
     margin: 10px;
